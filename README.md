@@ -1,12 +1,12 @@
-* Symfony2 Docterine Meshup
+# Symfony2 Docterine Meshup
 uses the docterine db details, create new PDO connection (as docterine wont return the actual resource, just a wrapped object) run the query and loop through reults.
-** example:
+## example:
     $sql = "EXEC someSP ?,?,?";
     $sqlParams = array('param1','param2', 'param3');
     $conn   = $this->getDoctrine()->getConnection();
     $results = $conn->multipleResultSetsFetchAll($sql, $sqlParams);
 
-* NB
+# NB
 ensure you have added the wrapper to your DBAL config.yml:
     doctrine:
         dbal:
