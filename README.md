@@ -8,6 +8,7 @@ uses the docterine db details, create new PDO connection (as docterine wont retu
 
 # NB
 ensure you have added the wrapper to your DBAL config.yml:
+
     doctrine:
         dbal:
             wrapper_class:  'Some\Bundle\Doctrine\DBAL\ExtendedConnection'
