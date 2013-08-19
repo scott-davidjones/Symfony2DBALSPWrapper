@@ -1,5 +1,5 @@
-# Symfony2 Docterine Meshup
-uses the docterine db details, create new PDO connection (as docterine wont return the actual resource, just a wrapped object) run the query and loop through reults.
+# Symfony2 Doctrine Meshup
+uses the docterine db details, create new PDO connection (as doctrine wont return the actual resource, just a wrapped object) run the query and loop through reults.
 ## example:
     $sql = "EXEC someSP ?,?,?";
     $sqlParams = array('param1','param2', 'param3');
