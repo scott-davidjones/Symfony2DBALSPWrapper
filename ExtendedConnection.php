@@ -1,9 +1,9 @@
 <?php
 /*
- * Symfony2 Docterine Meshup
+ * Symfony2 Doctrine Meshup
  *
- * uses the docterine db details, create new PDO connection
- * (as docterine wont return the actual resource, just a wrapped object)
+ * uses the doctrine db details, create new PDO connection
+ * (as doctrine wont return the actual resource, just a wrapped object)
  * run the query and loop through reults.
  *
  * example:
@@ -46,7 +46,7 @@ class ExtendedConnection extends Connection
     {
         //Get Connection infor from Doctrine
         $params = $this->getParams();
-        //create new PDO as we can only access the Docterine PDO as an object only
+        //create new PDO as we can only access the Doctrine PDO as an object only
         //via $this->getWrappedConnection()
         $conn = new \PDO("sqlsrv:Server=".$params['host'].";Database=".$params['dbname'],$params['user'],$params['password']);
         //prepare statement
